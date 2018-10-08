@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link href="panel-style.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="width=device-width; user-scalable=0" />
+
+</head>
+<body>
+
+<div id="bord" class="wrap">
+    <div class="tab-titles">
+    <div class="tab-title tab-selected" id="tab1" >Statistics</div>
+    <div class="tab-title"  id="tab2">Options</div>
+    <div class="tab-title"  id="tab3">About</div>
+
+        </div>
+        <div class="tab-content" id="tabc1">
+    <table id="stats">
+        <tr>
+            <td>Data Saved:</td>
+            <b>
+                <td><span id="data_s"></span> MB</td>
+            </b>
+        </tr>
+
+        <tr>
+            <td>Original Size:</td>
+            <b>
+                <td><span id="orig"></span> MB</td>
+            </b>
+        </tr>
+        <tr>
+            <td>Data Saver:</td>
+            <td>
+                <div class="m-button" id="m-but">
+                    <div class="rect">
+
+                    </div>
+                    <div id="knoble" class="knob knob-on">
+                    </div>
+                </div>
+            </td>
+        </tr>
+            <tr>
+            <td id="disable_message" class="hide_message" style="color:red;">Disabled due to Private Browsing</td>
+            
+        </tr>
+    </table>
+
+    <span class="perc">Savings <b id="per"></b></span>
+
+
+
+
+<div class="time-details">
+    <div class="c1">
+<table>
+<tr>
+        <td><span class="month">Monthly Savings <span class="month-MB" id="month-MB"></span></span></td>
+     <td>   <span id="resetm" class="but-box"><span style="color:black;">Reset</span></span></td>
+</tr>
+</table>
+    </div>
+    <div class="c2">
+
+<table>
+    <tr><td>        <span class="day">
+            Today's Savings:
+<span class="day-MB" id="day-MB"></span>
+
+        </span>
+        <td>
+        <td>
+        <span class="but-box" id="resetd"><span style="color:black;">Reset</span></span>
+    </td>
+    </tr>
+    </table>
+    </div>
+</div>
+
+
+</div>
+
+
+
+<div class="tab-content tab-content-unselected" id="tabc2">
+
+   <table>
+   <tr>
+   <div style="padding-top: 25px;margin-top: 25px;margin-left: 20%;">
+    <input type="button" value="Edit White List" id="btn_whitelist"/>
+    </div>
+   </tr>
+<tr>
+            <td>Allow in Private Browsing:</td>
+            <td>
+                <div class="m-button" id="p-but">
+                    <div class="rect">
+
+                    </div>
+                    <div id="knoble_private" class="knob knob-on">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        
+        </table>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="tab-content tab-content-unselected" id="tabc3" >
+
+        <h5 style="padding-top:20px;">Google Data Saver Proxy</h5>
+        <div>Version:2.2</div>
+        <div class="learn-more-img">
+            <img src="learn.png" style="max-width: 280px;"/>
+
+        </div>
+
+
+        <span style="font-size:13px;" id="alearn">Learn more about Google Compression Proxy</span>
+        <hr>
+        <span style="font-size:13px;" id="arate">Rate and Review</span>
+
+
+
+
+    </div>
+
+    </div>
+</body>
+</html>
+

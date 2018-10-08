@@ -1,0 +1,644 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"to",
+				"to_f"
+			],
+			[
+				"auct",
+				"auctionhistory"
+			],
+			[
+				"par",
+				"parseFloat"
+			],
+			[
+				"use",
+				"userdata"
+			],
+			[
+				"user",
+				"usertype"
+			],
+			[
+				"sp",
+				"spangreen"
+			],
+			[
+				"AUC",
+				"AUCTION_END"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"span",
+				"spanmessage"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"auc",
+				"auction_status"
+			],
+			[
+				"sta",
+				"start_time"
+			],
+			[
+				"act",
+				"action"
+			],
+			[
+				"biid",
+				"bidder_id"
+			],
+			[
+				"caet",
+				"category"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ac",
+				"auctionfloat"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"min",
+				"min_bid"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"bidi",
+				"biding_price"
+			],
+			[
+				"Bii",
+				"Bidding_table"
+			],
+			[
+				"auction",
+				"auction_id"
+			],
+			[
+				"bidd",
+				"bidder_id"
+			],
+			[
+				"biddin",
+				"Bidding_table"
+			],
+			[
+				"Bidd",
+				"Bidding_table"
+			],
+			[
+				"ver",
+				"verified_by"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"auctio",
+				"auction_status"
+			],
+			[
+				"prod",
+				"prod_id"
+			],
+			[
+				"to_",
+				"to_i"
+			],
+			[
+				"m",
+				"minutes"
+			],
+			[
+				"diff",
+				"diffdate"
+			],
+			[
+				"bi",
+				"biding_price"
+			],
+			[
+				"pri",
+				"prod_id"
+			],
+			[
+				"bid",
+				"bidtable"
+			],
+			[
+				"Bid",
+				"Bidding_table"
+			],
+			[
+				"start",
+				"start_time"
+			],
+			[
+				"verif",
+				"verify"
+			],
+			[
+				"veri",
+				"verified_by"
+			],
+			[
+				"Ve",
+				"Verify"
+			],
+			[
+				"sess",
+				"session"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"conten",
+				"justify-content-center"
+			],
+			[
+				"col",
+				"col-lg-4"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"border-t",
+				"border-top-width"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"text",
+				"text-primary"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"seller",
+				"seller_id"
+			],
+			[
+				"ran",
+				"randomisepath"
+			],
+			[
+				"or",
+				"original_filename"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"login",
+				"loginfail"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/admin_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/lib/tasks/crontask.rake",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/admin/vwproduct.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/stylesheets/arjun.css",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/categories_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/registercomplete.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/main_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/admin/index.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/auction_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/javascripts/application.js",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/auction/auctiondetails.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/auction/auctionhistory.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/search_pro.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/auction/show.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/initializers/assets.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/routes.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/categories/index.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/auction/edit.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/index.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/create.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/layouts/application.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/application_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/edit.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/profile.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/auction/create.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/show.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/ban.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/index.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/stylesheets/Product.css",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/product_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/userverify.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/auth0_controller.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/models/category.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/stylesheets/application.css",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/schema.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/models/auction_item.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/stylesheets/application1.css",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/layouts/application1.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/cancelauction.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/admin/vwuser.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/models/bidding_table.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170923051357_renamedesc.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/Gemfile",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/controllers/Cron.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/lib/tasks/auction.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/schedule.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/admin/vproduct.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170921200802_addpidtoauction.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/admin/auctionverify.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170921184744_addtimetoproducts.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170921184036_add_pid_to_auction2.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170921183355_add_pid_to_auction.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/db/migrate/20170917151406_create_verifies.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/verify.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/.gitignore",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/database.yml",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/regsucess.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/assets/stylesheets/session.scss",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/register.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/main/login.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/product/editauction.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/tmp/.keep",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/helpers/application_helper.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/application.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/config/environments/production.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/channels/application_cable/channel.rb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/layouts/mailer.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/layouts/test.html.erb",
+		"/home/arjun/Desktop/Online-Auction-Website/onlineauction/app/views/layouts/mailer.text.erb"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/home/arjun/Desktop/Online-Auction-Website/onlineauction",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"- @",
+			"-@",
+			"userver",
+			"userverify",
+			"verifywarning",
+			"admin",
+			"makeadmin",
+			"t",
+			"bidsame",
+			"uploads",
+			"auction",
+			"font",
+			"auctiondetails",
+			"auctionfloat",
+			"font-",
+			"font-sty",
+			"float:left;",
+			"float",
+			"table ",
+			"table {",
+			"table{",
+			"bidtable",
+			"hal",
+			"require_verify",
+			"if params[:id].nil? or params[:id]==\"\"",
+			"canc",
+			"verif",
+			"editauction",
+			"editauc",
+			"verify",
+			"userver",
+			"h",
+			"b",
+			"TimeZone",
+			"i",
+			"regis",
+			"edit",
+			"schedule",
+			"schefule",
+			"schdyke",
+			"login",
+			"GET",
+			"POST",
+			" \n",
+			"schema",
+			"0px",
+			"image",
+			"left",
+			"span",
+			"form",
+			"find",
+			"form",
+			"cron",
+			"form{",
+			"form",
+			"eql",
+			"desc",
+			"cancelbid",
+			"search",
+			"search_pro",
+			"desc",
+			"alert",
+			"desc",
+			">\n",
+			"bidding_price",
+			"@a",
+			"@arrmap[",
+			"]=",
+			"\n<%=",
+			"    \n",
+			"\n@",
+			"AUCTION_LIVE",
+			" \n",
+			"x",
+			"z",
+			"]\n",
+			">\n",
+			"img",
+			"image",
+			"verify",
+			"auction",
+			"\n  ",
+			"ds",
+			")\n",
+			"hidden",
+			"for",
+			"auctions",
+			"schedule",
+			"sc",
+			"(); ",
+			"datepicker",
+			"Online",
+			"online",
+			"ONLINE ",
+			"hash",
+			"verify",
+			"\"\n",
+			">\"",
+			"userid",
+			"][:",
+			"foote",
+			"image",
+			"333",
+			"    \n",
+			"nil",
+			"original_filename",
+			"file_field_tag",
+			" @",
+			"text_feild_tag",
+			"register",
+			" justify-content-center",
+			"'',",
+			"callback",
+			"}\"}%>",
+			"\n\t\t\t",
+			"\t\t\t\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"xx",
+			"h",
+			"div",
+			"biding_price",
+			" ,",
+			"=>",
+			"y"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "counter.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
