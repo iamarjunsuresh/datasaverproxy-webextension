@@ -29,7 +29,8 @@
   "webRequest",
   "webRequestBlocking",
   "storage",
-  "proxy"
+  "proxy",
+  "storage"
 ]
 
 }

@@ -13,8 +13,7 @@ var pbut = document.getElementById("p-but");
 var x = document.getElementById("knoble");
 var privatex=document.getElementById("knoble_private");
 var addsite=document.getElementById("add_site");
-var mbday = document.getElementById("day-MB");
-var mbmonth = document.getElementById("month-MB");
+ 
 var message=document.getElementById("disable_message");
 
 
@@ -111,7 +110,7 @@ function onshow(data) {//console.log(data);
    */ 
      //setting text
      var nd1 = document.createElement("span");
-     nd1.appendChild(document.createTextNode(""+per+"%"));
+     nd1.appendChild(document.createTextNode(""+per+" MB"));
      perc.appendChild(nd1);
 
      var nd2 = document.createElement("span");
@@ -244,6 +243,8 @@ function sendto(message)
 sending.then(onshow, handleError);
 
 }
+
+browser.runtime.onMessage.addListener(function(d){console.log(d);onshow(d);});
 
 sendto("getdata");
 
