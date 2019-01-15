@@ -4,7 +4,7 @@
 
  
   "icons": {
-    "48": "icon/icon48.png"
+    "48": "icon/green48.png"
   }
 
 ,
@@ -16,8 +16,8 @@
 
 "browser_action": {
   "default_icon": {
-    "19": "icon/icon16.png",
-    "38": "icon/icon32.png"
+    "19": "icon/green16.png",
+    "38": "icon/green32.png"
   
   },
   "default_popup": "popup/tool.html",

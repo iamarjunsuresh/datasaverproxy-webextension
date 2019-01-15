@@ -8,15 +8,10 @@ cl=console.log;
 
 function init()
 {
-  console.log("Init()");
-
-     set("original",0);
-      set("savedbytes",0);
-      set("actualbytes",0);
-      set("initflag",1);
-      set("saveron",1);
-
-  get("initflag",function(e){
+ 
+ 
+    
+  get(["saveron","initflag"],function(e){
 
     if(e.initflag==undefined ||true)
     { 
@@ -25,9 +20,17 @@ function init()
       set("actualbytes",0);
       set("initflag",1);
       set("saveron",1);
+      set("allowinprivate",0);
+        set("totalsave",0);
       
-    }
+    }  
+
+ if(e.saveron)
+  {
+    install();
+  }
   });
+
  
 }
 function checkreloaderror(e)
@@ -59,12 +62,14 @@ if(e.responseHeaders[i].name.tolowercase()==="content-length")
 
 }
     savedbytes=parseInt(e.responseHeaders[i].value);
-    console.log(savedbytes);
-    get(["savedbytes","actualbytes"],function(r){
+ 
+    get(["savedbytes","actualbytes","totalsave"],function(r){
       r.savedbytes+=savedbytes;
       r.actualbytes+=abytes;
-
+      r.totalsave+=savedbytes;
     set("savedbytes",r.savedbytes);
+    set("actualbytes",r.actualbytes);
+    set("totalsave",r.totalsave)
 });
 }
 
@@ -106,17 +111,12 @@ if (isprivateblocked())
 
 
  e.requestHeaders.push(chrome_header);
-  console.log(e);
-  
-  return e;
-
-}
-else{
-
-
-  return e;
+ 
 }
 
+console.log("returned:");
+console.log(e);
+return e;
 }
 
 //console.log(addAuthHeader({requestHeaders:[]}));
@@ -157,11 +157,11 @@ function unregproxy()
 
 function authheader()
 {
-    var authValue = '3c1d997267c567617ffe0e1b1ebbeed71398dd27';
+    var authValue = 'ac4500dd3b7579186c1b0620614fdb1f7d61f944';
                //   'ac4500dd3b7579186c1b0620614fdb1f7d61f944'
               //3c1d997267c567617ffe0e1b1ebbeed71398dd27
     var timestamp = Date.now().toString().substring(0, 10);
-    return 'ps=' + timestamp + '-' + '0' + '-' + '0' + '-' + '0' + ', sid=' + md5(timestamp + authValue + timestamp) + ', b=2214' + ', p=115' + ', c=android';
+    return 'ps=' + timestamp + '-' + '0' + '-' + '0' + '-' + '0' + ', sid=' + md5(timestamp + authValue + timestamp) + ', b=1847' + ', p=116' + ', c=win';
   }
 
 
@@ -169,24 +169,23 @@ function authheader()
 
 browser.runtime.onMessage.addListener((sentMesssage) => 
 { 
- if(sentMesssage==="toggle"){
+  console.log("Recieved messagge:"+sentMesssage);
+ if(sentMesssage==="toggle_status"){
 
           get("saveron",function(e)
 
 
           {
-              if(e)
-              {
-            set("saveron",1);
+            set("saveron",1-e.saveron);
     
-              }
-              else{
-                
+           if(e.saveron)
+           {
+              unregproxy();
 
-            set("saveron",0);
-                
-              }
-
+           }
+           else{
+            regproxy();
+           }
 
           });
             
@@ -196,23 +195,32 @@ browser.runtime.onMessage.addListener((sentMesssage) =>
  
 
    console.log("popup requested data");
-   get(["savedbytes","actualbytes"],function(e){
+   get(["savedbytes","actualbytes","allowinprivate","totalsave","saveron"],function(e){
     
     console.log(e);
-    browser.runtime.sendMessage({enabled:1,t:2,original:e.actualbytes,savedbytes:e.savedbytes});
-    
-    });
+    browser.runtime.sendMessage({enabled:e.saveron,allowinprivate:e.allowinprivate,t:e.totalsave,original:e.actualbytes,savedbytes:e.savedbytes});});
 
 
  
 
  }
+ else if(sentMesssage==="toggle_private")
+ {
+  console.log('toggled private');
+ get("allowinprivate",function(e){
+set("allowinprivate",1-e.allowinprivate);
 
-});
 
+ });
+
+
+}});
+function install(){
+  regproxy();
+ 
 browser.webRequest.onBeforeSendHeaders.addListener(
   addAuthHeader,
-  {urls: ["<all_urls>"]},
+  {urls: ["http://*"]},
   ["blocking", "requestHeaders"]
 );
 
@@ -222,6 +230,19 @@ browser.webRequest.onHeadersReceived.addListener(
   {urls: ["http://*"]},
   [  "responseHeaders"]
 );
+
+
+}
+function uninstall()
+{
+ unregproxy();
+
+browser.webRequest.onBeforeSendHeaders.removeListener(addAuthHeader);
+browser.webRequest.onHeadersReceived.removeListener(checkreloaderror);
+
+}
+
+init();
 
 browser.storage.onChanged.addListener(function(changes, namespace) {
   for (key in changes) {
@@ -235,10 +256,5 @@ browser.storage.onChanged.addListener(function(changes, namespace) {
   }
 });
 
-
-regproxy();
-init();
-
-console.log(browser.webRequest.onBeforeSendHeaders.hasListener(addAuthHeader));
-console.log(browser.webRequest.onHeadersReceived.hasListener(checkreloaderror));
-browser.runtime.onSuspend.addListener(unregproxy);
+ 
+//browser.runtime.onSuspend.addListener(function(){uninstall();});

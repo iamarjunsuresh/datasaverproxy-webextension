@@ -5,11 +5,11 @@
 cl=console.log;
 
 //    tab
-var save_dom = document.getElementById("data_s");
+var saved = document.getElementById("datas");
 var orig = document.getElementById("orig");
-var perc = document.getElementById("per");
+var total = document.getElementById("totaldatas");
 var mbut = document.getElementById("m-but");
-var pbut = document.getElementById("p-but");
+var pbtn = document.getElementById("p-but");
 var x = document.getElementById("knoble");
 var privatex=document.getElementById("knoble_private");
 var addsite=document.getElementById("add_site");
@@ -17,8 +17,7 @@ var addsite=document.getElementById("add_site");
 var message=document.getElementById("disable_message");
 
 
-cl(save_dom);
-cl(orig);
+ 
 
 //tabtitles
 var tab1 = document.getElementById("tab1");
@@ -40,17 +39,18 @@ var rate=document.getElementById("arate");
 var learn=document.getElementById("alearn");
 
 
-mbut.addEventListener("click", toggle_status);
+mbut.addEventListener("click", function(){toggle_status();});
 //pbut.addEventListener("click",toggle_private);
 rate.addEventListener("click",function(){sendto("rateurl");})
 learn.addEventListener("click",function(){sendto("learnurl");})
+pbtn.addEventListener("click",function(){toggle_private();});
 
 var private_on=null;
 var on = null;
 //onshow(self.options);
 
 
-function onshow(data) {//console.log(data);
+function onshow(data) {console.log(data);
     if (data.enabled) {
         on = 1;
         x.className = "knob";
@@ -62,8 +62,8 @@ function onshow(data) {//console.log(data);
         x.className = x.className + " knob-off";
         on = 0;
     }
-    /*
-      if (data.allowprivate) {
+    
+      if (data.allowinprivate) {
         private_on = 1;
         privatex.className = "knob";
         privatex.className = privatex.className + " knob-on";
@@ -78,22 +78,21 @@ function onshow(data) {//console.log(data);
     message.className="";
     
     
-    }*/
+    }
     if (!data.t) {
-        per = 0;
         tot = 0;
         save = 0;
-
+        original=0;
     }
     
     else {
-        var per = (data.actualbytes-data.savedbytes) / data.actualbytes * 100;//+" %";
-        var tot = data.actualbytes / 1024 / 1024;// +" MB";
+        var tot = data.t/1024/1024;//+" %";
+        var original = data.actualbytes / 1024 / 1024;// +" MB";
         var save = (data.savedbytes / 1024 / 1024);//  + "MB";
         //data.mbd=data.mbd/1024/1024;
         //data.mbm=data.mbm/1024/1024;
     }
-    per = per.toFixed(2);
+    original = original.toFixed(2);
     tot = tot.toFixed(2);
     save = save.toFixed(2);
 
@@ -110,16 +109,16 @@ function onshow(data) {//console.log(data);
    */ 
      //setting text
      var nd1 = document.createElement("span");
-     nd1.appendChild(document.createTextNode(""+per+" MB"));
-     perc.appendChild(nd1);
+     nd1.appendChild(document.createTextNode(""+original+" MB"));
+     orig.appendChild(nd1);
 
      var nd2 = document.createElement("span");
      nd2.appendChild(document.createTextNode(tot+ " MB"));
-     orig.appendChild(nd2);
+     totaldatas.appendChild(nd2);
 
      var nd3 = document.createElement("span");
      nd3.appendChild(document.createTextNode(save+ " MB"));
-     save_dom.appendChild(nd3);
+     saved.appendChild(nd3);
      
 }
 var selected_tab=0;
@@ -163,12 +162,11 @@ function rclass(node,classstr)
 
 }
 
-/*
 function toggle_private(){
 
 
 
-
+console.log("toggling privatemode");
 
 
    privatex.className = "knob";
@@ -195,7 +193,7 @@ function toggle_private(){
 
 
 }
-*/
+
 
 /*
 function reset_month() {
@@ -217,8 +215,8 @@ function toggle_status() {
 
     if (on) {
         on = 0;
-
-// turn off;
+       
+        // turn off;
         x.className = x.className + " knob-off";
         sendto("toggle_status");
 
@@ -234,12 +232,16 @@ function toggle_status() {
 }
 
 
-function handleError(d){console.log("error==>"+d);}
-
+var fnn="";
+function handleError(d){console.log("error==>"+d+":"+fnn);}
 
 function sendto(message)
 {
+
+    fnn="Sending "+message;
 	var sending=browser.runtime.sendMessage(message);
+
+    
 sending.then(onshow, handleError);
 
 }

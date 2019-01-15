@@ -3,7 +3,7 @@
 
 var blockedHosts = [];
 const allow = "DIRECT";
-const deny = "PROXY http://compress.googlezip.net:80/";
+const deny = "PROXY compress.googlezip.net:80";
 
 
 // required PAC function that will be called to determine
